@@ -1,0 +1,147 @@
+{%  extends 'accounts/main.html' %}
+{%load static%}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result</title>
+
+    <style>
+    /* CSS for centering the table */
+    .container {
+        text-align: center;
+        background-image: url('https://media.istockphoto.com/id/1182549107/photo/paper-texture-in-light-white-cream-color.webp?b=1&s=170667a&w=0&k=20&c=A8VT42InJtZurK0ySchw52ViNZVwY5LjJ_L2RvnUmRI=');
+        background-size: cover;
+        padding: 50px 0; /* Adjust as needed */
+    }
+
+    /* CSS for styling the table */
+    table {
+        margin: auto;
+        width: 80%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Input Values</h1>
+    <table>
+        <tr>
+            <th>Parameters</th>
+            <th>Values</th>
+        </tr>
+        <tr>
+            <td>Region</td>
+            <td>{{a6}}</td>
+        </tr>
+        <tr>
+            <td>Season</td>
+            <td>{{a7}}</td>
+        </tr>
+        <tr>
+            <td>PH</td>
+            <td>{{a8}}</td>
+        </tr>
+        <tr>
+            <td>Nitrogen</td>
+            <td>{{a9}}</td>
+        </tr>
+        <tr>
+            <td>Phosphorous</td>
+            <td>{{a10}}</td>
+        </tr>
+        <tr>
+            <td>Pottasium</td>
+            <td>{{a11}}</td>
+        </tr>
+
+
+    </table>
+</div>
+
+<style>
+    /* CSS for centering the table */
+    .container {
+        text-align: center;
+        background-image: url('https://media.istockphoto.com/id/1182549107/photo/paper-texture-in-light-white-cream-color.webp?b=1&s=170667a&w=0&k=20&c=A8VT42InJtZurK0ySchw52ViNZVwY5LjJ_L2RvnUmRI=');
+        background-size: cover;
+        padding: 50px 0; /* Adjust as needed */
+    }
+
+    /* CSS for styling the table */
+    table {
+        margin: auto;
+        width: 80%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Output Results</h1>
+    <table>
+        <tr>
+            <th>Parameters</th>
+            <th>Values</th>
+        </tr>
+        <tr>
+            <td>Predicted Soil Type</td>
+            <td>{{a1}}</td>
+        </tr>
+        <tr>
+            <td>Predicted Crops</td>
+            <td>{{a2}}</td>
+        </tr>
+        <tr>
+            <td>Predicted Humidity</td>
+            <td>{{a3}}</td>
+        </tr>
+        <tr>
+            <td>Predicted Temperature</td>
+            <td>{{a4}}</td>
+        </tr>
+        <tr>
+            <td>Predicted Rainfall</td>
+            <td>{{a5}}</td>
+        </tr>
+    </table>
+</div>
+<br>
+<h1 class="ml3" style="text-align: center; color: #000"> Uploaded Image</h1><br>
+       <h2 style="text-align: center"> <img src={{filePathName}} alt='imagename'></h2>
+
+</body>
+</html>
+
+
+</body>
+{% endblock content %}
+
